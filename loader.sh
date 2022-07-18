@@ -1,0 +1,1 @@
+celery -A app.pipeline worker --loglevel=INFO -n loaders@instance1 --concurrency=2 --queues transformers_to_loaders --pool eventlet

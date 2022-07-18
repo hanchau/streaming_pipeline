@@ -1,0 +1,1 @@
+celery -A app.pipeline worker --loglevel=INFO -n transformers@instance1 --concurrency=2 --queues extractors_to_transformers

@@ -1,0 +1,1 @@
+celery -A app.pipeline worker --loglevel=INFO -n extractors@instance1 --concurrency=2 --queues kafka_to_extractors --pool eventlet
